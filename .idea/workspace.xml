@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa04ec7-87af-405a-b648-ef9db82b080c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DjangoProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weblog/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weblog/templates/weblog/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weblog/urls.py" afterDir="false" />
+    <list default="true" id="2aa04ec7-87af-405a-b648-ef9db82b080c" name="Changes" comment="adding files">
+      <change afterPath="$PROJECT_DIR$/weblog/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weblog/migrations/0002_alter_article_content_alter_article_is_published.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weblog/static/weblog/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/templates/weblog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/templates/weblog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weblog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/weblog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,21 +48,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Django Server.DjangoProject.executor": "Run",
+    "HTTP Request.generated-requests | #1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "Errors",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django Server.DjangoProject">
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
       <module name="DjangoProject" />
       <option name="ENV_FILES" value="" />
@@ -84,6 +93,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -100,11 +114,42 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752996177409</updated>
-      <workItem from="1752996179113" duration="2811000" />
+      <workItem from="1752996179113" duration="8529000" />
     </task>
+    <task id="LOCAL‎−۰۰۰۰۱" summary="starting and set the first settings of project">
+      <option name="closed" value="true" />
+      <created>1752999145569</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۱" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۱" />
+      <updated>1752999145569</updated>
+    </task>
+    <task id="LOCAL‎−۰۰۰۰۲" summary="adding files">
+      <option name="closed" value="true" />
+      <created>1752999174496</created>
+      <option name="number" value="LOCAL‎−۰۰۰۰۲" />
+      <option name="presentableId" value="LOCAL‎−۰۰۰۰۲" />
+      <updated>1752999174496</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="starting and set the first settings of project" />
+    <MESSAGE value="adding files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding files" />
   </component>
 </project>

@@ -1,102 +1,39 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>وبلاگ من</title>
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet"/>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Vazir', sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 1rem 2rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    nav {
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: #ccc;
-      margin-left: 1rem;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    nav a:hover {
-      color: white;
-    }
-    .container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 2rem;
-      text-align: right;
-    }
-    .post {
-      background-color: white;
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      border-right: 5px solid #333;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .post h2 {
-      margin-top: 0;
-      color: #333;
-    }
-    .post .meta {
-      font-size: 0.85rem;
-      color: #888;
-      margin-bottom: 1rem;
-    }
-    .post p {
-      margin: 0.5rem 0;
-      line-height: 1.8;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>وبلاگ من</title>
+    <link rel="stylesheet" href="{% static 'weblog/index.css' %}">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet"/>
 </head>
 <body>
 
 <header>
-  <h1>وبلاگ من</h1>
-  <nav>
-    <a href="#">خانه</a>
-    <a href="#">درباره</a>
-    <a href="#">تماس</a>
-  </nav>
+    <h1>وبلاگ من</h1>
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#">درباره</a>
+        <a href="#">تماس</a>
+    </nav>
 </header>
 
 <div class="container">
-  <div class="post">
-    <h2>اولین پست وبلاگ</h2>
-    <div class="meta">۲۹ تیر ۱۴۰۴ · دسته‌بندی: تکنولوژی</div>
-    <p>این اولین پست من در این وبلاگ است. قراره در مورد تکنولوژی، برنامه‌نویسی و تجربه‌هام بنویسم. خوشحال می‌شم با من همراه باشید.</p>
-  </div>
-
-  <div class="post">
-    <h2>شروع یادگیری پایتون</h2>
-    <div class="meta">۳۰ تیر ۱۴۰۴ · دسته‌بندی: برنامه‌نویسی</div>
-    <p>یادگیری زبان برنامه‌نویسی پایتون یکی از بهترین تصمیم‌هایی بود که گرفتم. ساده، قابل فهم و در عین حال قدرتمند.</p>
-  </div>
+    {% for article in articles %}
+       {% if article.is_published %}
+       	 <div class="post">
+            <h2><a href="#">{{ article.title }}</a></h2>
+            <div class="meta">{{ article.published_at }}. دسته بندی : {{ article.category.first }}</div>
+            <p>{{ article.summary }}</p>
+        </div>
+       {% endif %}
+    {% endfor %}
 </div>
 
 <footer>
-  &copy; ۱۴۰۴ - تمامی حقوق محفوظ است.
+    &copy; ۱۴۰۴ - تمامی حقوق محفوظ است.
 </footer>
 
 </body>
