@@ -1,3 +1,6 @@
+# Django Test Project
+
+_________________
 This is a Test Project 
 
 
